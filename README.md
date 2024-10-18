@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Goss
 
-## Getting Started
+Goss is a social media platform where users share voice notes instead of written posts. Think of it as Twitter, but for audio content! Users can record, post, listen to, and interact with voice notes, making it a unique way to connect through sound.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Voice note posts**: Users can record and post voice messages instead of written text.
+- **Feed**: Listen to the latest voice notes from the people you follow.
+- **Likes & Comments**: Engage with voice notes by liking or commenting via voice.
+- **Real-time updates**: New voice notes appear in real-time as they’re posted.
+- **User Profiles**: Each user has a profile showcasing their posted voice notes.
+- **Follow System**: Follow users to keep up with their latest voice notes.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend**: Next.js – a React framework for building modern web applications.
+- **Backend**: Supabase – an open-source Firebase alternative for authentication, database, and storage.
+- **Database**: PostgreSQL (via Supabase) – stores user information, posts, and interactions.
+- **Storage**: Supabase Storage – stores the audio files for the voice notes.
+- **Authentication**: Supabase Auth – handles user registration, login, and security.
+- **Styling**: Tailwind CSS – a utility-first CSS framework for fast UI development.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Installation
 
-## Learn More
+### Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+- Node.js v16 or higher
+- Supabase account with a project set up
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Getting Started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone the repository:
 
-## Deploy on Vercel
+   ```bash
+   git clone https://github.com/your-username/goss.git
+   cd goss
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Install dependencies
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   npm install
+   ```
+
+3. Set up your environment variables by creating a .env.local - You can find these in your Supabase Dashboard:
+
+   ```bash
+   NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
+   ```
+
+4. Run the development server
+   ```bash
+   npm run dev
+   ```
+
+Your app should now be running on http://localhost:3000.
