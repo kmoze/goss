@@ -1,57 +1,74 @@
 # Goss
 
+<p align="center">
+  <img src="./public/goss-logo.svg" width="256" />
+</p>
+
 Goss is a social media platform where users share voice notes instead of written posts. Think of it as Twitter, but for audio content! Users can record, post, listen to, and interact with voice notes, making it a unique way to connect through sound.
 
-## Features
+- Voice note posts: Users can record and post voice messages instead of written text.
+- Feed: Listen to the latest voice notes from the people you follow.
+- Reactions & Comments: Engage with voice notes by reacting or commenting via voice.
+- Real-time chat: New voice notes appear in real-time as they’re posted.
+- User Profiles: Each user has a profile showcasing their posted voice notes.
+- Following & Followers: Follow users to keep up with their latest voice notes.
+- AI voice generation: Use the text-to-speech AI voices to post
+- Voice notes transcriptions: Let everyone know what you think with audio-to-text transcription
 
-- **Voice note posts**: Users can record and post voice messages instead of written text.
-- **Feed**: Listen to the latest voice notes from the people you follow.
-- **Likes & Comments**: Engage with voice notes by liking or commenting via voice.
-- **Real-time updates**: New voice notes appear in real-time as they’re posted.
-- **User Profiles**: Each user has a profile showcasing their posted voice notes.
-- **Follow System**: Follow users to keep up with their latest voice notes.
+### Demo
 
-## Tech Stack
-
-- **Frontend**: Next.js – a React framework for building modern web applications.
-- **Backend**: Supabase – an open-source Firebase alternative for authentication, database, and storage.
-- **Database**: PostgreSQL (via Supabase) – stores user information, posts, and interactions.
-- **Storage**: Supabase Storage – stores the audio files for the voice notes.
-- **Authentication**: Supabase Auth – handles user registration, login, and security.
-- **Styling**: Tailwind CSS – a utility-first CSS framework for fast UI development.
-
-## Installation
-
-### Prerequisites
-
-- Node.js v16 or higher
-- Supabase account with a project set up
+<p align="center">
+  <img src="./public/gossgif1mb.gif" width="480" />
+</p>
 
 ### Getting Started
 
-1. Clone the repository:
+1. Clone the repo
 
-   ```bash
-   git clone https://github.com/your-username/goss.git
-   cd goss
-   ```
+```sh
+git clone https://github.com/salmon-01/gossip.git
+```
 
 2. Install dependencies
 
-   ```bash
-   npm install
-   ```
+```
+cd goss
+npm install
+```
 
-3. Set up your environment variables by creating a .env.local - You can find these in your Supabase Dashboard:
+3. Create `.env.local` file in goss directory:
 
-   ```bash
-   NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
-   NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
-   ```
+```sh
+NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
+OPENAI_API_KEY=your-openai-platform-key
+PLAY_HT_API_KEY=your-play-ht-key
+PLAY_HT_USER_ID=your-play-ht-user-id
+```
 
-4. Run the development server
-   ```bash
-   npm run dev
-   ```
+4. Run the project:
 
-Your app should now be running on http://localhost:3000.
+```sh
+npm run dev
+```
+
+## Tech Stack
+
+- NextJS
+- Typescript
+- React
+- WaveSurferJS
+- Supabase
+- PlayHT API
+- Whisper 1 by OpenAI
+- Vitest
+- TailwindCSS
+- Shadcn/ui
+
+## Authors
+
+- Joshua Tuddenham - [GitHub](https://github.com/joshuaisaact) - [LinkedIn](https://www.linkedin.com/in/joshuatuddenham/)
+- Ilya Onoprienko - [GitHub](https://github.com/salmon-01) - [LinkedIn](https://www.linkedin.com/in/ilya-onoprienko/)
+- Kieran Mozer - [GitHub](https://github.com/kmoze) - [LinkedIn](https://www.linkedin.com/in/kiermozer/)
+- Jamal Onanuga - [GitHub](https://github.com/jamalona) - [LinkedIn](https://www.linkedin.com/in/jamal-onanuga/)
+- Frederick Moore - [GitHub](https://github.com/Fred-A-M) - [LinkedIn](https://www.linkedin.com/in/frederic-moore/)
