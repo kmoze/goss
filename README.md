@@ -26,7 +26,7 @@ Goss is a social media platform where users share voice notes instead of written
 1. Clone the repo
 
 ```sh
-git clone https://github.com/salmon-01/gossip.git
+git clone https://github.com/kmoze/goss.git
 ```
 
 2. Install dependencies
