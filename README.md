@@ -54,16 +54,16 @@ npm run dev
 
 ## Tech Stack
 
-- NextJS
+- Next.js
 - Typescript
 - React
-- WaveSurferJS
+- Wavesurfer.js
 - Supabase
 - PlayHT API
 - Whisper 1 by OpenAI
-- Vitest
-- TailwindCSS
+- Tailwind CSS
 - Shadcn/ui
+- Vitest
 
 ## Authors
 
